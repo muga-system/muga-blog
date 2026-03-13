@@ -1,0 +1,33 @@
+---
+title: "Separando dominio y adapters en un crawler web"
+date: "2026-03-10"
+description: "Decisión de arquitectura: separar reglas del negocio e integración para entender mejor dónde ajustar cuando algo falla."
+area: "decisiones-arquitectura"
+---
+En este proyecto mezclábamos reglas de negocio con detalles de integración externa.
+Cuando algo fallaba, todo parecía estar mal al mismo tiempo.
+
+## Decisión de arquitectura
+
+Separamos el sistema en tres partes:
+
+- reglas del negocio
+- conectores externos
+- coordinación del flujo
+
+## Qué cambió
+
+Ahora cada problema tiene un lugar más claro.
+No hace falta abrir toda la solución para entender qué pasó.
+
+## Resultado del trabajo diario
+
+Las revisiones son más cortas y los cambios son más seguros.
+También mejoró la comunicación con personas que no trabajan en código.
+
+## Idea central
+
+Separar responsabilidades no es solo orden técnico: mejora cómo decide el equipo.
+
+
+
