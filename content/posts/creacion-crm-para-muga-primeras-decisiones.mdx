@@ -1,0 +1,29 @@
+---
+title: "Creacion del CRM de Muga: primeras decisiones"
+date: "2026-03-15"
+description: "Definimos alcance inicial, flujo comercial y criterios tecnicos para construir un CRM util desde la primera semana."
+area: "decisiones-arquitectura"
+---
+Esta semana arrancamos la creacion del CRM para Muga con una premisa clara: primero resolver operacion real, despues escalar funciones.
+
+## Decision de alcance
+
+La version inicial se enfoca en tres modulos:
+
+- pipeline de oportunidades
+- registro de interacciones
+- seguimiento de proximas acciones
+
+## Criterio de arquitectura
+
+Priorizamos estructura simple, con datos bien normalizados y trazabilidad por etapa comercial.
+Esto evita rehacer el modelo cuando el equipo de ventas crece.
+
+## Hallazgo de implementacion
+
+Modelar estados del pipeline desde el inicio ordeno tambien los reportes.
+Con esto, cada avance comercial queda medible sin trabajo manual extra.
+
+## Resultado esperado
+
+En lugar de un CRM gigante desde el dia uno, estamos construyendo una base estable que ya aporta visibilidad y control al equipo.
