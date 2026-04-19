@@ -1,0 +1,28 @@
+---
+title: "Separacion de entornos como condicion base"
+date: "2026-03-22"
+description: "Separar desarrollo, sistema operativo y herramientas evito errores dificiles de rastrear."
+area: "hallazgos-implementacion"
+---
+Se tomo la decision de separar fisicamente los entornos para reducir inconsistencias.
+
+## Proceso aplicado
+
+- entorno de desarrollo en Linux
+- entorno general en Windows
+- ejecucion de Docker solo en Linux
+
+Este corte elimino errores que venian del entorno y no del sistema.
+
+## Hallazgo de implementacion
+
+Separar desarrollo y ejecucion en capas claras hizo visibles errores antes difusos.
+
+## Resultado del trabajo diario
+
+Menos errores invisibles.
+Sistema mas predecible.
+
+## Cierre del proceso
+
+Cuando el entorno es estable, el sistema se vuelve confiable.
